@@ -1,32 +1,36 @@
-.container_box{
+.container_box {
     width: min(100% 1440px);
     position: relative;
 }
+
 /* davaleba 1 */
-.button_div{
+.button_div {
     display: flex;
     background-color: violet;
     width: calc(500 / 1440 * 100%);
     margin: 100px auto;
 }
-.btn{
+
+.btn {
     color: white;
     background-color: rgb(171, 20, 218);
     width: 150px;
     height: 50px;
-margin: 100px auto;
-border-radius: 17px;
-cursor: pointer;
-border: none;
-text-shadow: 2px 2px 2px black;
-box-shadow: -2px -2px 3px 1px white, 3px 3px 3px 1px black;
+    margin: 100px auto;
+    border-radius: 17px;
+    cursor: pointer;
+    border: none;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: -2px -2px 3px 1px white, 3px 3px 3px 1px black;
 }
-.btn:active{
+
+.btn:active {
     text-shadow: 1px 1px 1px black;
     box-shadow: -2px -2px 3px 1px white inset, 3px 3px 3px 1px black inset;
 }
+
 /* davaleba 2  */
-.image_div{
+.image_div {
     display: block;
     width: 300px;
     height: 250px;
@@ -36,20 +40,41 @@ box-shadow: -2px -2px 3px 1px white, 3px 3px 3px 1px black;
     transition-duration: 1s;
     transition-timing-function: linear;
 
-    
+
 }
-.divImage{
+
+.divImage {
     width: 100%;
     transition: all;
     transition-duration: 1s;
     transition-timing-function: linear;
 }
-.image_div:hover{
+
+.image_div:hover {
     border-radius: 10px;
     box-shadow: 2px 2px 3px cyan, -2px -2px 3px cyan;
 
 }
-.divImage:hover{
-    border-radius: 15px 15px 0 0 ;
 
+.divImage:hover {
+    border-radius: 15px 15px 0 0;
+
+}
+
+/* davaleba 3 */
+.P_TEXT {
+    font-size: 140px;
+    color: red;
+    letter-spacing: 20px;
+    animation: P_animation .5s infinite;
+}
+
+@keyframes P_animation {
+    from {
+        color: red;
+    }
+
+    to {
+        color: black;
+    }
 }
